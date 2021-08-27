@@ -1,0 +1,273 @@
+#face-mask-app {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+}
+
+#image-container{
+    position: relative;
+    margin-top: -55px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    text-align: center;
+    background-color: black;
+}
+#faces{
+    width: auto;
+    height: 100%;
+    max-width: none;
+}
+
+#button-control{
+    position: relative;
+    bottom: 200px;
+    left: 0;
+    right: 0;
+    height: 65px;
+    margin: auto;
+    background: transparent;
+    border: 0;
+    width: 320px;
+    z-index: 99999;
+}
+
+#mask-btn{
+    font-size: 30px;
+    padding: 10px 30px;
+    font-weight: 400;
+    opacity: 0.8;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+}
+
+.form-control.webcam-start{
+    top: 10%!important;
+}
+
+.form-control.webcam-on{
+    top: 15%!important;
+}
+
+#canvas{
+    z-index: 9998!important;
+}
+
+.loading{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index:300000;
+    border: white 1px;
+    color: white;
+    padding: 75px 26px;
+    font-size: 22px;
+    margin: auto;
+    width: 200px;
+    height: 200px;
+}
+
+.spinner-border {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 200px;
+    color: white;
+    z-index:300000;
+    filter: alpha(opacity=80);
+    -moz-opacity: 0.8;
+    opacity: 0.8;   
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    background-color: blue;
+    border-radius: 50%;
+    display: inline-block;
+    z-index: 999999;
+}
+
+#arrowLeft{
+    position: absolute;
+    left: 10px;
+    top: 0;
+    bottom: 0;
+    z-index: 999999;
+    opacity: 0.7;
+    cursor: pointer;
+    margin: auto;
+}
+
+#arrowRight{
+    position: absolute;
+    right: 10px;
+    top: 0;
+    bottom: 0;
+    z-index: 999999;
+    opacity: 0.7;
+    cursor: pointer;
+    margin: auto;
+}
+
+#mask-slider{
+    width: 100%;
+    height: 125px;
+    margin: auto;
+    position: relative;
+    bottom: 190px;
+    background-color: black;
+    opacity: 0.7;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+#mask-list{
+    position: relative;
+    width: 85%;
+    height: 125px;
+    margin: auto;
+    overflow: hidden;
+}
+
+#mask-slider ul{
+    list-style: none;
+    width: 10000px;
+    height: 125px;
+    padding-left: 10px;
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+
+#mask-slider ul li {
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin: 5px 15px;
+    vertical-align: middle;
+    text-align: center;
+    cursor: pointer;
+}
+
+#mask-slider ul li img {
+    width: 85px;
+    margin: auto;
+}
+
+.mask{
+    border: 0px;
+}
+
+.selected-mask{
+    border: 5px solid #0099cc;
+}
+
+.full-mask{
+    height: 85px!important;
+    width: auto!important;
+}
+
+@media screen and (max-width: 1024px) {
+    .loading{
+        padding: 55px 0px;
+        font-size: medium;
+        width: 150px;
+    }
+    .spinner-border{
+        width: 150px;
+        height: 150px;
+    }
+    #mask-slider{
+        width: 100%;
+    }
+    #mask-list {
+        width: 80%;
+    }
+    #mask-list ul {
+        padding-left: 0;
+        margin-top: 25px;
+    }
+    #mask-list ul li {
+        width: 75px;
+        height: 75px;
+        margin: 5px 8px;
+    }
+    #mask-list ul li img {
+        width: 65px;
+    }
+
+    .full-mask{
+        height: 65px!important;
+        width: auto!important;
+        margin-left: 3px!important;
+    }
+
+    #mask-btn{
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #face-mask-app{
+        height: 100vh;
+    }
+    #arrowLeft{
+        height: 43px;
+    }
+    #arrowRight{
+        height: 43px;
+    }
+}
+
+@media screen and (min-width: 450px) and (max-width: 767px) {
+    .form-control.webcam-start{
+        top: 0!important;
+    }
+
+    #mask-list {
+        width: 86%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .form-control.webcam-start{
+        top: 5%!important;
+    }
+    .form-control.webcam-on{
+        top: 15%!important;
+    }
+    #button-control{
+        bottom: 350px;
+    }
+    #mask-slider{
+        bottom: 320px;
+    }
+}
+
+.md-modal {
+    margin: 0!important;
+}
+
+
+#webcam-container #mask-slider{
+    position: fixed;
+    bottom: 10px;
+    width: 91.2%;
+    margin: 0 0 0 auto;
+}
+
+@media screen and (max-width: 892px) {
+    #webcam-container #mask-slider{
+        bottom: 70px;
+        width: 100%;
+    }
+}
