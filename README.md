@@ -4,7 +4,7 @@ Image and Real time webcam face detection, protect yourself from COVID19 with a 
 Utilize tensorflowjs facemesh model.
 
 ## Live Demo
-**[https://bensonruan.com/face-mask-for-trump-with-face-landmark-detection](https://bensonruan.com/face-mask-for-trump-with-face-landmark-detection)**
+**[https://face-mask-enespolat.netlify.app/](https://face-mask-enespolat.netlify.app/)**
 
 
 
