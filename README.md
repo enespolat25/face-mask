@@ -18,11 +18,5 @@ Point your localhost to the cloned root directory
 
 Browse to http://localhost/index.html 
 
-## Face Keypoints 
-The facemesh detected keypoints that used for overlay the mask:
-* Forehead : 10
-* Left Cheek : 234
-* Chin : 152
-* Right Cheek : 454
 
 
