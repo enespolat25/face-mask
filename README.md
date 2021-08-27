@@ -6,7 +6,7 @@ Utilize tensorflowjs facemesh model.
 ## Live Demo
 **[https://bensonruan.com/face-mask-for-trump-with-face-landmark-detection](https://bensonruan.com/face-mask-for-trump-with-face-landmark-detection)**
 
-![mask-for-Trump](https://bensonruan.com/wp-content/uploads/2020/05/Mask_for_Trump.gif)
+
 
 
 ## Installing
