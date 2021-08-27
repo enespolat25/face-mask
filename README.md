@@ -12,7 +12,7 @@ Utilize tensorflowjs facemesh model.
 ## Installing
 Clone this repository to your local computer
 ``` bash
-git https://github.com/bensonruan/Face-Mask.git
+git clone https://github.com/enespolat25/face-mask.git
 ```
 Point your localhost to the cloned root directory
 
